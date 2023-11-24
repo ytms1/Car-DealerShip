@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&display=swap');
+
+:root {
+    --orange: #EE8113;
+    --dark-orange: #EF5E10;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    font: 16px/28px 'Be Vietnam Pro', Arial, Helvetica, sans-serif;
+    background-color: #000;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: .4s;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+button {
+    display: block;
+    border: none;
+    background-color: transparent;
+    font: inherit;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.btn-primary {
+    padding: 12px 24px;
+    font-weight: 600;
+    background-color: var(--orange);
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-orange);
+}
+
+.btn-secondary {
+    padding: 12px 24px;
+    font-weight: 600;
+    transition: .6s;
+    color: var(--orange);
+    border: 1px solid var(--orange);
+}
+
+.btn-secondary:hover {
+    background-color: var(--orange);
+    color: #000;
+}
+
+
+/* Header */
+
+#header-section {
+    padding: 40px 0 107px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+.header-logo__img {
+    width: 48px;
+    height: 48px;
+}
+
+.nav-main {
+    margin-left: auto;
+}
+
+.nav-main__list {
+    display: flex;
+    gap: 48px;
+    margin-right: 72px;
+}
+
+.nav-main__item:hover {
+    color: var(--orange)
+}
+
+/* Banner */
+
+#banner-section {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 60px;
+}
+
+.banner {
+    max-width: 475px;
+    padding-top: 40px;
+}
+
+.banner__title {
+    font-size: 52px;
+    line-height: 64px;
+    letter-spacing: 0.6px;
+}
+
+.banner__text {
+    margin: 32px 0 48px;
+    font-size: 17px;
+    opacity: 0.8;
+}
+
+.banner-links-wrap {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 40px;
+}
+
+.banner-features__text {
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.banner-features__text:first-child {
+    margin-right: 40px;
+}
+
+.banner-features__text_strong {
+    margin-right: 16px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    vertical-align: sub;
+}
+
+.banner-img {
+    position: absolute;
+    width: 48%;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+
+.banner-img::before {
+    position: absolute;
+    content: '';
+    width: 96%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    background: url('./img/baner-main.png') no-repeat;
+}
+
+.banner-img::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    width: 73%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgb(52 52 52 / 30%);
+}
